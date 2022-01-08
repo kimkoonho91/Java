@@ -4,19 +4,11 @@ import java.io.File;
 public class getFileList {
 	// 폴더의 파일 목록 가져오기
     public static void main(String[] args) {
-        File file = new File("D:\\배경화면");
-        
-        int count = 0;
+        File file = new File("D:\\정보");
         
         for (File data : file.listFiles()) {
-            count++;
             
-            System.out.print("\"" + data.getName() + "\", ");
-            
-            if (count == 10) {
-                count = 0;
-                System.out.println();
-            }
+            System.out.println("SELECT '" + data.getName() + "' AS NAME FROM DUAL UNION ALL");
         }
     }
 }
