@@ -1,9 +1,9 @@
 package Package;
 import java.io.File;
 
-public class FileUtil {
-    // 폴더의 파일 목록 가져오기
-    public void getFileList() {
+public class getFileList {
+	// 폴더의 파일 목록 가져오기
+    public static void main(String[] args) {
         File file = new File("D:\\배경화면");
         
         int count = 0;
